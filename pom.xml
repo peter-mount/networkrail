@@ -12,8 +12,23 @@
     <modules>
         <module>networkrail-core</module>
         <module>networkrail-corpus</module>
+        <!-- Disabled
         <module>networkrail-docker</module>
+        -->
     </modules>
+    
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Area51 Releases</name>
+            <url>https://nexus.area51.onl/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Area51 Snapshots</name>
+            <url>https://nexus.area51.onl/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
